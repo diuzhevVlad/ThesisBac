@@ -37,6 +37,7 @@ times % use Times font as main
 \usepackage[onehalfspacing]{setspace} % полуторный интервал
 \usepackage{fancyhdr} % установка колонтитулов
 \usepackage{listings} % поддержка вставки исходного кода
+\usepackage{enumitem}
 
 % Установка шрифта Times New Roman
 \renewcommand{\rmdefault}{ftm}
@@ -52,7 +53,29 @@ times % use Times font as main
 \renewcommand{\headrulewidth}{0pt} % Удаление разделительной линии в верхнем колонтитуле
 
 % Настройка подписей к изображениям и таблицам
-\captionsetup{format=hang,labelsep=period}
+% \captionsetup{format=hang,labelsep=period}
+\DeclareCaptionFormat{customformat}{{#1~#2---} #3\par}
+\captionsetup[figure]{
+  format=customformat,
+  name=Рисунок,
+  font=normalsize,
+  justification=centering,
+  singlelinecheck=false,
+  skip=10pt,
+  labelsep=none  % <-- отключаем автоматическую точку
+}
+\captionsetup[table]{
+  format=customformat,
+  name=Таблица,
+  font=normalsize,
+  justification=raggedright,
+  singlelinecheck=false,
+  skip=10pt,
+  labelsep=none  % <-- отключаем автоматическую точку
+}
+\setlist[enumerate]{label=\arabic*)}
+\setlist[itemize]{label=---}
+
 
 % Использование полужирного начертания для векторов
 \let\vec=\mathbf

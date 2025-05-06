@@ -155,9 +155,9 @@
 
     \centering \textbf{Алгоритм Верле:}
 
-    \begin{equation}
+    \begin{equation*}
       \overrightarrow{\mathrm{r}}(\mathrm{t}+\Delta \mathrm{t})=2 \overrightarrow{\mathrm{r}}(\mathrm{t})-\overrightarrow{\mathrm{r}}(\mathrm{t}-\Delta \mathrm{t})+\overrightarrow{\mathrm{a}}(\mathrm{t}) \Delta \mathrm{t}^{2}+\mathrm{O}\left(\Delta \mathrm{t}^{4}\right), \hspace{0.1cm} \text{где} \hspace{0.2cm} \vec{a}(t)=-\frac{\operatorname{grad}(\mathrm{U}(\mathrm{\overrightarrow{r}}(\mathrm{t})))}{\mathrm{m}}
-    \end{equation}
+    \end{equation*}
   }
 \end{frame}
 
@@ -172,10 +172,10 @@
 
         \centering \textbf{LJn-m}
 
-        \begin{equation}
+        \begin{equation*}
           U_{n-m}(r)=4 \varepsilon\left[\left(\frac{\sigma}{r}\right)^{n}-\left(\frac{\sigma}{r}\right)^{m}\right]
           \label{eqGenLJ}
-        \end{equation}
+        \end{equation*}
         \jj где $\epsilon = 1$ и $\sigma = 1$ - магнитуда и \\ характерный масштаб отталкивания соответственно.
 
         \vspace{0.0cm}
@@ -192,10 +192,10 @@
         \vspace{0.4cm}
         \centering \textbf{Ethane}
 
-        \begin{equation}
+        \begin{equation*}
           U_{ethane}(r) = \tilde \varepsilon\left[\left(\frac{\sigma}{r}\right)^{16}-\left(\frac{\sigma}{r}\right)^{6}\right],
           \label{eqEthan}
-        \end{equation}
+        \end{equation*}
         \jj где $\tilde \varepsilon = 0.695$ ккал/моль; $\sigma = 3.783$\AA.
 
         \vspace{1.0cm}
@@ -235,9 +235,9 @@
 
       \begin{column}{0.48\linewidth}
 
-        \begin{equation}
+        \begin{equation*}
           \rho(x)=\frac{\rho_{c}+\rho_{g}}{2}-\frac{\rho_{c}-\rho_{g}}{2} \tanh \left(\frac{|x|-L}{\delta}\right)
-        \end{equation}
+        \end{equation*}
         \jj{где $L$ - половина размера области \\ конденсированной фазы; \\
           $\delta$ - характерная толщина
           интерфейса.}
@@ -278,7 +278,7 @@
     \begin{figure}[!t]
       \centering
       \includegraphics[width=0.9\linewidth]{kepsilon.pdf}
-      \caption{Принцип работы алгоритма кластеризации DBSCAN для случая $k = 3$.}
+      \caption{Принцип работы алгоритма кластеризации DBSCAN для случая $k = 3$}
       \label{kepsilon}
     \end{figure}
   }
@@ -339,10 +339,10 @@
 
       \begin{column}{0.45\linewidth}
 
-        \begin{equation}
+        \begin{equation*}
           \rho_{c}-\rho_{g} \simeq A \tau^{\beta}, \quad \rho_{c}+\rho_{g} \simeq a \tau+2 \rho_{\mathrm{CP}},
           \label{eqFitFlatLayer}
-        \end{equation}
+        \end{equation*}
         \jj{где $\tau=T_{\mathrm{CP}}-T$; \\
           $T_{\mathrm{CP}}$ и $\rho_{\mathrm{CP}}$ - температура и
           плотность в критической точке соответственно; \\
@@ -384,10 +384,10 @@
         \end{align}
 
         Подвижность частиц $\mu$ связана с диффузией:
-        \begin{equation}
+        \begin{equation*}
           \mu = \frac{D}{T}
           \label{eqMobility}
-        \end{equation}
+        \end{equation*}
 
         Спектр потока скорости:
         \begin{align}
@@ -401,12 +401,12 @@
     \vspace{0.5cm}
 
     Полный спектр потока скорости $C(q, \omega) = C_L(q, \omega) + (D-1)C_T(q, \omega)$:
-    \begin{equation}
+    \begin{equation*}
       \begin{aligned}
         C(q, \omega) & \propto \frac{\Gamma_{L}}{\left(\omega-\omega_{L}\right)^{2}+\Gamma_{L}^{2}}+\frac{\Gamma_{L}}{\left(\omega+\omega_{L}\right)^{2}+\Gamma_{L}^{2}}+\frac{(D-1) \Gamma_{T}}{\left(\omega-\omega_{T}\right)^{2}+\Gamma_{T}^{2}}+\frac{(D-1) \Gamma_{T}}{\left(\omega+\omega_{T}\right)^{2}+\Gamma_{T}^{2}}
       \end{aligned}
       \label{eq5}
-    \end{equation}
+    \end{equation*}
   }
   \vspace{1.0cm}
   \tiny{N.P. Kryuchkov, et al., Scientific Reports 9, 10483 (2019). \\
