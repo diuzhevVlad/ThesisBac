@@ -280,3 +280,5 @@ TSWLatexianTemp*
 
 # pdf output
 /*.pdf
+!diploma_final.pdf
+!diploma_presentation.pdf
